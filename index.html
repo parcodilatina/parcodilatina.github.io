@@ -5,19 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>STOCAAAAZZOOOOOO</title>
 <style>
-  html, body { margin: 0; height: 100%; background: #ffffff; overflow: hidden; }
-  body { display: flex; align-items: center; justify-content: center; }
+  html, body { margin: 0; height: 100%; overflow: hidden; }
+  body {
+    display: flex; align-items: center; justify-content: center;
+    animation: sfondo 1s steps(1) infinite;
+  }
   #t {
     font-family: Impact, "Arial Black", Arial, sans-serif;
     font-weight: 900;
-    color: #ff0000;
     white-space: nowrap;
     line-height: 1;
+    animation: scritta 1s steps(1) infinite;
+  }
+  @keyframes sfondo {
+    0%  { background: #ffffff; }
+    50% { background: #0033cc; }
+  }
+  @keyframes scritta {
+    0%  { color: #ff0000; }
+    50% { color: #ffffff; }
   }
 </style>
 </head>
 <body>
-<div id="t">STOCAAAAZZZZZOOOOOOOOO!!!!</div>
+<div id="t">STOCAAAAZZZZOOOOOOOOO!!!!</div>
 <script>
   function fit() {
     var t = document.getElementById('t'), s = 10;
